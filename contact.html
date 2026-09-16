@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chiikawa Corner — Contact & Stats</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <p class="site-title">Chiikawa Corner</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <h1>Character Stats & Fan Contact</h1>
+
+      <h2>Main Characters Profile Overview</h2>
+      
+      <table>
+        <caption>Chiikawa World Character Details & Skills</caption>
+        <thead>
+          <tr>
+            <th scope="col">Category</th>
+            <th scope="col">Character</th>
+            <th scope="col">Job & Role</th>
+            <th scope="col">Qualification Exam</th>
+            <th scope="col">Favorite Food</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" rowspan="3">Main Trio</th>
+            <td>Chiikawa</td>
+            <td>Weeding & Pesticide Spraying</td>
+            <td>Studying for Grade 5</td>
+            <td>Ramen & Sweets</td>
+          </tr>
+          <tr>
+            <td>Hachiware</td>
+            <td>Weeding & Monster Hunting</td>
+            <td>Passed Grade 5 License</td>
+            <td>Hotpot & Roasted Squid</td>
+          </tr>
+          <tr>
+            <td>Usagi</td>
+            <td>High-Level Hunting & Gathering</td>
+            <td>Grade 3 License Holder</td>
+            <td>Pudding & Giant Snacks</td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="2">Regular Friends</th>
+            <td>Momonga</td>
+            <td>Cute Demeanor & Wandering</td>
+            <td>Uncertified</td>
+            <td>Chowder & Cream Sweets</td>
+          </tr>
+          <tr>
+            <td>Kurimanjuu</td>
+            <td>Senior Worker & Guide</td>
+            <td>Alcohol License Holder</td>
+            <td>Savory Snacks & Tea</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Fan Feedback Form</h2>
+      <p>Fill out the form below to share your favorite characters!</p>
+
+      <form action="#" method="get">
+
+        <fieldset>
+          <legend>Your Details</legend>
+
+          <div class="field">
+            <label for="full-name">Full name</label>
+            <input type="text" id="full-name" name="full-name" placeholder="e.g. John Doe" required maxlength="60">
+          </div>
+
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="field">
+            <label for="fan-since">Fan since</label>
+            <input type="date" id="fan-since" name="fan-since" min="2020-01-01" max="2026-12-31">
+          </div>
+
+          <div class="field">
+            <label for="merch">Number of Chiikawa merch you own</label>
+            <input type="number" id="merch" name="merch" min="0" max="100" placeholder="0">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your Preferences</legend>
+
+          <div class="field">
+            <label for="favorite-color">Pick your favorite pastel color</label>
+            <input type="color" id="favorite-color" name="favorite-color" value="#ffb6c9">
+          </div>
+
+          <div class="field">
+            <span>Which characters do you like? (choose all that apply)</span>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="favorite-character" value="chiikawa"> Chiikawa</label>
+              <label><input type="checkbox" name="favorite-character" value="hachiware"> Hachiware</label>
+              <label><input type="checkbox" name="favorite-character" value="usagi"> Usagi</label>
+              <label><input type="checkbox" name="favorite-character" value="momonga"> Momonga</label>
+            </div>
+          </div>
+
+          <div class="field">
+            <span>How did you hear about Chiikawa?</span>
+            <div class="radio-group">
+              <label><input type="radio" name="heard-from" value="social-media" required> Social media</label>
+              <label><input type="radio" name="heard-from" value="friend"> A friend</label>
+              <label><input type="radio" name="heard-from" value="merch-store"> A merch store</label>
+              <label><input type="radio" name="heard-from" value="other"> Other</label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" maxlength="300" placeholder="Tell us why you love Chiikawa..."></textarea>
+          </div>
+        </fieldset>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Chiikawa Corner — a fan project. Not affiliated with Nagano or the official Chiikawa brand.</p>
+  </footer>
+
+</body>
+</html>

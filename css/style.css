@@ -1,0 +1,257 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eae8de;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+header {
+    background-color: #ffdae9;
+    padding: 1rem 0;
+    border-bottom: 3px solid #fca1c9;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d84374;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+
+nav a:hover, nav a.active {
+    background-color: #ffe66d;
+    color: black;
+}
+
+
+.hero {
+    background-color: #e0f7fa;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 2px dashed #4dd0e1;
+}
+
+.hero h1 {
+    color: #00838f;
+    margin-bottom: 10px;
+}
+
+
+h1, h2, h3 {
+    color: #d84374;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+
+#intro-highlight {
+    background-color: #fff0f5;
+    border: 2px dashed rgb(255, 105, 180);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+.character-grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.character-card {
+    flex: 1;
+    min-width: 250px;
+    background-color: white;
+    border: 2px solid #fca1c9;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.chiikawa-card { background-color: #fff8fa; }
+.hachiware-card { background-color: #f4f8ff; border-color: #90caf9; }
+.usagi-card { background-color: #fffde7; border-color: #ffe082; }
+
+.card-image {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.card-image img {
+    max-height: 120px;
+    width: auto;
+    border: none;
+    background: transparent;
+}
+
+.badge {
+    background-color: #d84374;
+    color: white;
+    font-size: 0.8rem;
+    padding: 2px 8px;
+    border-radius: 8px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #fca1c9;
+}
+
+figure {
+    text-align: center;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+figcaption {
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+}
+
+blockquote {
+    background-color: #eef7ff;
+    border-left: 5px solid rgb(74, 144, 226); 
+    padding: 10px 15px;
+    margin: 20px 0;
+}
+
+.media-frame {
+    margin: 20px 0;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+}
+
+caption {
+    font-weight: bold;
+    color: #d84374;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ffd1dc;
+    text-align: left;
+}
+
+thead tr {
+    background-color: #ffc0cb;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff9fb;
+}
+
+
+fieldset {
+    border: 2px solid #fca1c9;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: white;
+}
+
+legend {
+    color: #d84374;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.field {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #d84374;
+    background-color: #fff0f5;
+}
+
+button[type="submit"] {
+    background-color: #fca1c9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #d84374;
+}
+
+
+footer {
+    background-color: #ffdae9;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-top: 2px solid #fca1c9;
+}
